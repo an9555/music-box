@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Music Player | Audio Player </title>
+  <!-- Fontawesome -->
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css'>
+  <!-- CSS -->
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="./img/logo.ico">
+</head>
+<body>
+  <!-- 3D model -->
+  <div id="container3D"></div>
+  <!-- Music App -->
+<div id="app-cover">
+  <div id="bg-artwork"></div>
+  <div id="bg-layer"></div>
+  <div id="player">
+    <div id="player-track">
+      <div id="album-name"></div>
+      <div id="track-name"></div>
+      <div id="track-time">
+        <div id="current-time"></div>
+        <div id="track-length"></div>
+      </div>
+      <div id="s-area">
+        <div id="ins-time"></div>
+        <div id="s-hover"></div>
+        <div id="seek-bar"></div>
+      </div>
+    </div>
+    <div id="player-content">
+      <div id="album-art">
+        <!-- 圖片 -->
+        <div class="img"></div>
+        <img src="img/img_1.jpg" class="active" id="_1">
+        <img src="img/img_2.jpg" id="_2">
+        <img src="img/img_3.jpg" id="_3">
+        <img src="img/img_4.jpg" id="_4">
+        <img src="img/img_5.jpg" id="_5">
+        <img src="img/img_6.jpg" id="_6">
+        <img src="img/img_1.jpg" id="_7">
+        <img src="img/img_2.jpg" id="_8">
+        <img src="img/img_3.jpg" id="_3">
+        <div id="buffer-box">Buffering ...</div>
+      </div>
+      <div id="player-controls">
+        <div class="control">
+          <div class="button" id="play-previous">
+            <i class="fas fa-backward"></i>
+          </div>
+        </div>
+        <div class="control">
+          <div class="button" id="play-pause-button">
+            <i class="fas fa-play"></i>
+          </div>
+        </div>
+        <div class="control">
+          <div class="button" id="play-next">
+            <i class="fas fa-forward"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- jQuery -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <!-- Music -->
+  <script  src="js/music.js"></script>
+  <!-- 3D Model -->
+  <script type="module" src="js/3D_Model.js"></script>
+</body>
+</html>
